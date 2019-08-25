@@ -22,8 +22,8 @@ def client_srv():
 
         # 打印处理结果，注意调用response的方法，类似于从resp对象中调取response属性
         rospy.loginfo("Message From server:%s"%resp.feedback)
-    except rospy.ServiceException, e:
-        rospy.logwarn("Service call failed: %s"%e)
+    except rospy.ServiceException:
+        rospy.logwarn("Service call failed: %s"%rospy.ServiceException)
 
 # 如果单独运行此文件，则将上面函数client_srv()作为主函数运行
 if __name__=="__main__":

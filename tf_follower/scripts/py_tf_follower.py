@@ -21,7 +21,7 @@ if __name__ == '__main__':
         def shutdownhook():
             # works better than the rospy.is_shut_down()
             global ctrl_c
-            print "shutdown time! Stop the robot"
+            print ("shutdown time! Stop the robot")
             cmd = geometry_msgs.msg.Twist()
             cmd.linear.x = 0.0
             cmd.angular.z = 0.0

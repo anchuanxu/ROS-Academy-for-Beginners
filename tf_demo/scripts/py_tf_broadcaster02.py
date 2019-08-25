@@ -9,8 +9,8 @@ import tf
   
 if __name__ == '__main__':  
     rospy.init_node('py_tf_broadcaster')
-    print '讲解tf.transformBroadcaster类'
-    print '第2种发布方式：sendTransformMessage(transform)'
+    print ('讲解tf.transformBroadcaster类')
+    print ('第2种发布方式：sendTransformMessage(transform)')
 #第二部分，发布sendTransformMessage(transform)
     m=tf.TransformBroadcaster()
     t = geometry_msgs.msg.TransformStamped()
