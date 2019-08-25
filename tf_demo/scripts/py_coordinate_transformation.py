@@ -8,7 +8,7 @@ import tf
 if __name__ == '__main__':  
     rospy.init_node('py_coordinate_transformation')
 #第1部分，定义空间点和空间向量
-    print '第1部分，定义空间点和空间向量'
+    print ('第1部分，定义空间点和空间向量')
 #1.1 返回均匀随机单位四元数
     q=tf.transformations.random_quaternion(rand=None)
     print ('定义均匀随机四元数：')
@@ -33,7 +33,7 @@ if __name__ == '__main__':
     print ('第2部分，定义四元数')
 #2.1 通过旋转轴和旋转角返回四元数
     axis_q=tf.transformations.quaternion_about_axis(0.123, (1, 0, 0))
-    print ('通过旋转轴和旋转角返回四元数：'_)
+    print ('通过旋转轴和旋转角返回四元数：')
     print  (axis_q)
 #2.2 返回四元数的共轭
     n_q=tf.transformations.quaternion_conjugate(q)
